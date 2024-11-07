@@ -1,0 +1,72 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- Hero Section -->
+<div class="relative bg-cover bg-center h-screen" style="background-image: url('~/images/windmillHome.jpg');">
+    <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Dark overlay for text contrast -->
+    <div class="relative z-10 flex items-center justify-center h-full text-center text-white px-6">
+        <div>
+            <h1 class="text-5xl font-extrabold text-gold leading-tight">
+                Welcome to <span class="text-white">Energia Ventosa</span>
+            </h1>
+            <p class="mt-4 text-lg text-gray-300">Harnessing the power of wind for a sustainable future.</p>
+            <a href="#about" class="mt-8 inline-block px-8 py-4 bg-gold-500 text-lg font-semibold text-black rounded-md shadow-xl hover:bg-gold-600 transition-all">
+                Learn More
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- About Section -->
+<section id="about" class="py-16 bg-gray-900 text-center text-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-4 text-gold">About Energia Ventosa</h2>
+        <p class="text-lg mb-8">
+            Energia Ventosa is dedicated to bringing renewable wind energy to communities worldwide. Our wind turbines are strategically placed to harness the best wind currents, ensuring efficiency and sustainability.
+        </p>
+        <div class="relative mb-12">
+            <!-- About Image -->
+            <img src="~/img/windmillHome.jpeg" alt="Windmill Image" class="w-96 h-96 object-cover rounded-md">
+            <div class="absolute inset-0 bg-black opacity-30"></div> <!-- Light overlay on image -->
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="py-16 bg-gray-800 text-center text-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-gold mb-6">Our Key Features</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+            <!-- Feature 1 -->
+            <div class="bg-gray-700 p-6 rounded-lg border-2 border-gold">
+                <h3 class="text-2xl font-semibold text-gold mb-4">Sustainable Energy</h3>
+                <p class="text-gray-300">We produce clean, renewable energy that powers cities and remote areas alike. Our wind turbines are the future of sustainable energy.</p>
+            </div>
+            <!-- Feature 2 -->
+            <div class="bg-gray-700 p-6 rounded-lg border-2 border-gold">
+                <h3 class="text-2xl font-semibold text-gold mb-4">Innovative Technology</h3>
+                <p class="text-gray-300">At Energia Ventosa, we push the boundaries of technology to maximize efficiency and minimize environmental impact.</p>
+            </div>
+            <!-- Feature 3 -->
+            <div class="bg-gray-700 p-6 rounded-lg border-2 border-gold">
+                <h3 class="text-2xl font-semibold text-gold mb-4">Global Impact</h3>
+                <p class="text-gray-300">Our wind farms are located all around the world, contributing to a cleaner, greener planet for future generations.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="py-16 bg-gold-500 text-center text-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-semibold mb-4">Ready to join the wind revolution?</h2>
+        <p class="text-lg mb-8">Become a part of Energia Ventosa and contribute to a cleaner, more sustainable world.</p>
+        <a href="#contact" class="inline-block px-8 py-4 bg-black text-lg font-semibold rounded-md hover:bg-gray-800 transition-all">Contact Us</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-black text-white py-6 text-center">
+    <p>&copy; 2024 - Energia Ventosa</p>
+</footer>

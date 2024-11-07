@@ -1,0 +1,48 @@
+@{
+    ViewData["Title"] = "Login";
+}
+
+<!-- Hero Section -->
+<div class="relative bg-cover bg-center h-screen" style="background-image: url('~/images/loginBackground.jpg');">
+    <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Dark overlay for text contrast -->
+    <div class="relative z-10 flex items-center justify-center h-full text-center text-white px-6">
+        <div>
+            <h1 class="text-5xl font-extrabold text-gold leading-tight">Login to Energia Ventosa</h1>
+            <p class="mt-4 text-lg text-gray-300">Access your account to manage your energy projects.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Login Form Section -->
+<section class="py-16 bg-gray-900 text-center text-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-4 text-gold">Login</h2>
+        <p class="text-lg mb-8">Please enter your credentials to log in to your Energia Ventosa account.</p>
+        
+        <!-- Login Form -->
+        <form method="post" asp-action="Login" asp-controller="Account" class="max-w-md mx-auto bg-gray-800 p-6 rounded-lg shadow-lg">
+            <div class="form-group mb-6">
+                <label for="email" class="block text-xl font-semibold text-gray-300">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email" class="w-full p-4 mt-2 bg-gray-700 text-white border border-gold rounded-md" />
+            </div>
+
+            <div class="form-group mb-6">
+                <label for="password" class="block text-xl font-semibold text-gray-300">Password</label>
+                <input type="password" id="password" name="password" required placeholder="Enter your password" class="w-full p-4 mt-2 bg-gray-700 text-white border border-gold rounded-md" />
+            </div>
+
+            <button type="submit" class="w-full py-4 bg-gold-500 text-lg font-semibold text-black rounded-md shadow-xl hover:bg-gold-600 transition-all">
+                Login
+            </button>
+        </form>
+
+        <!-- Alternative Links -->
+        <p class="mt-4 text-gray-300">Don't have an account? <a href="/Account/Register" class="text-gold-500 hover:underline">Register here</a>.</p>
+        <p class="mt-2 text-gray-300">Forgot your password? <a href="/Account/ForgotPassword" class="text-gold-500 hover:underline">Reset it</a>.</p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-black text-white py-6 text-center">
+    <p>&copy; 2024 - Energia Ventosa</p>
+</footer>
